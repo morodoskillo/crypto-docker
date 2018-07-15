@@ -36,13 +36,10 @@ RUN apt-get install -y --no-install-recommends libminiupnpc-dev
 # 5. Let's try to build this with QT5
 
 RUN apt-get install -y --no-install-recommends \
-    libprotobuf-dev \
-    libqt5core5 \
-    libqt5dbus5 \
-    libqt5gui5 \
-    protobuf-compiler \
-    qttools5-dev \
-    qttools5-dev-tools
+    libqt4-dev \
+	libprotobuf-dev \
+	protobuf-compiler\
+	libqrencode-dev
 
 # 6. Install these packages in order to view the QT GUI using a VNC viewer.  Which you need to do if you want to run the QT GUI inside a docker container.
 RUN apt-get install -y --no-install-recommends \
