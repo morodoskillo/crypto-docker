@@ -19,12 +19,7 @@ RUN apt-get install -y --no-install-recommends \
 
 # 3. As per the docs, we only need to selectively install a handful of the boost libraries
 RUN apt-get install -y --no-install-recommends \
-    libboost-chrono-dev \
-    libboost-filesystem-dev \
-    libboost-program-options-dev \
-    libboost-system-dev \
-    libboost-test-dev \
-    libboost-thread-dev
+    libboost-all-dev
 
 # This is a dependency of add-apt-repository.
 RUN apt-get install -y --no-install-recommends software-properties-common
