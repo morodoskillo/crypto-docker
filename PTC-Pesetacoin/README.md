@@ -1,6 +1,6 @@
 # Getting Started
 ```sh
-$ git clone https://github.com/bostontrader/crypto-docker
+$ git clone https://github.com/morodoskillo/crypto-docker
 $ cd crypto-docker/PTC-Pesetacoin
 $ docker build -t crypto-docker-ptc . 
 $ mkdir /home/batman/.pesetacoin
